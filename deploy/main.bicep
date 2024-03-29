@@ -1,8 +1,9 @@
 @description('Create a virtual network with two subnets')
 param location string = 'japaneast'
+param vnetName string = 'vnet-01'
 
 resource virtualNetwork 'Microsoft.Network/virtualNetworks@2019-11-01' = {
-  name: 'vnet-01'
+  name: vnetName
   location: location
   properties: {
     addressSpace: {
