@@ -1,3 +1,4 @@
+@description('Create a virtual network with two subnets')
 param location string = 'japaneast'
 
 resource virtualNetwork 'Microsoft.Network/virtualNetworks@2019-11-01' = {
